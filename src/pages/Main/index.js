@@ -4,7 +4,7 @@ import {StatusBar} from 'react-native';
 
 import {Container, Title} from './styles';
 
-const Main = () => (
+const Main = ({navigation}) => (
   <>
     <StatusBar barStyle="light-content" backgroundColor="#45046a" />
     <Container>
@@ -12,5 +12,9 @@ const Main = () => (
     </Container>
   </>
 );
+
+Main.navigationOptions = {
+  title: 'Home',
+}
 
 export default Main;
